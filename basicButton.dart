@@ -51,8 +51,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           const SizedBox(height: 30),
           ElevatedButton(
             style: style,
-            onPressed: () {},
-            child: const Text('Enabled'),
+            onPressed: () {print("Clicked");},
+            child: const Text(
+              'Enabled',
+              style:TextStyle(
+                color:Colors.green,
+              )
+            ),
           ),
         ],
       ),

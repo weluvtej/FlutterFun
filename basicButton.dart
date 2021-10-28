@@ -37,7 +37,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     final ButtonStyle style =
-        ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
+        ElevatedButton.styleFrom(
+          textStyle: 
+            const TextStyle(
+              fontSize: 20,
+              color: Colors.blue,
+            ),
+          );
 
     return Center(
       child: Column(
@@ -51,7 +57,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           const SizedBox(height: 30),
           ElevatedButton(
             style: style,
-            onPressed: () {},
+            onPressed: () {print("Clicked");},
             child: const Text('Enabled'),
           ),
         ],

@@ -52,7 +52,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ElevatedButton(
             style: style,
             onPressed: () {},
-            child: const Text('Enabled'),
+            child: const Text(
+              'Enabled'
+              style: TextStyle(
+                fontSize:40,
+                alignment:Alignment.topLeft,
+                color:Colors.green,
+              )
+            ),
           ),
         ],
       ),
